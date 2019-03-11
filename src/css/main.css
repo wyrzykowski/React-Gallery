@@ -1,0 +1,114 @@
+/* All photos from pixabay.com */
+/*  You can use any resolution of photos for gallery - gallery is full responive */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #EEE !important; }
+
+/*style for gallery iamge */
+#gallery_img img {
+  cursor: pointer; }
+
+/*showiamge is all screen background */
+#show_image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 110;
+  display: block;
+  width: 6000px;
+  height: 3000px; }
+
+#close {
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  background-color: #555555;
+  border: solid 1px;
+  z-index: 110;
+  opacity: 0.9; }
+
+#forward {
+  display: block;
+  font-wight: 700;
+  cursor: pointer;
+  text-align: center;
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 50px;
+  background-color: #555555;
+  border: solid 1px;
+  z-index: 110;
+  opacity: 0.6; }
+
+#back {
+  display: block;
+  font-wight: 700;
+  cursor: pointer;
+  text-align: center;
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 50px;
+  background-color: #555555;
+  border: solid 1px;
+  z-index: 110;
+  opacity: 0.6; }
+
+#close:hover {
+  background-color: #777777; }
+
+#forward:hover {
+  background-color: #777777;
+  opacity: 0.9; }
+
+#back:hover {
+  background-color: #777777;
+  opacity: 0.9; }
+
+#showed_image {
+  height: auto;
+  width: auto;
+  padding: 0;
+  border: solid 1px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#showed_image img {
+  height: 550px;
+  width: auto; }
+
+#gallery {
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  min-height: 450px; }
+
+#gallery_img {
+  overflow: hidden;
+  margin-top: 35px;
+  width: 250px;
+  height: 170px;
+  background-color: #000000;
+  box-shadow: 10px 10px 5px grey;
+  transition: transform 0.3s ease-in-out; }
+
+#gallery img {
+  height: 170px;
+  width: auto; }
+
+#gallery_img:hover {
+  transform: scale(0.95); }
