@@ -5,7 +5,7 @@ function GalleryGrid(props) {
   const  {images,onClick} = props;
     return (
 
-            <div id="gallery" className="container">
+            <div id="gallery" className="container" >
                 <div className="row">
 
                     {
