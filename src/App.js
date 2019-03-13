@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
-import logo from './logo.svg';
 import './css/main.css';
 import GlleryGrid from './gallery_components/gallery-grid'
 import './gallery_components/show-image'
@@ -12,16 +11,17 @@ state={
     images:['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg'],
     show:false,
     showImage:null,
-    showImageIndex:null,
+    showIndex:null,
     showForward:false,
-    showBack:false
+    showBack:false,
+    alt:"alt example"
 }
 
 handleClick=(image)=>{
     const show=true;
-    const showImageIndex = this.state.images.indexOf(image);
-    this.setState({show,showImageIndex});
-    this.performShowImage(showImageIndex);
+    const showIndex = this.state.images.indexOf(image);
+    this.setState({show,showIndex});
+    this.performShowImage(showIndex);
 }
 
 handleClose=()=>{
@@ -29,44 +29,42 @@ handleClose=()=>{
     this.setState({show});
 }
 handleForward=()=>{
-    if(this.state.showImageIndex<this.state.images.length-1) {
-        const showImageIndex = ++this.state.showImageIndex;
-        console.log("forward");
-        this.setState({showImageIndex});
-        this.performShowImage(showImageIndex);
+    if(this.state.showIndex<this.state.images.length-1) {
+        const showIndex = ++this.state.showIndex;
+        this.setState({showIndex});
+        this.performShowImage(showIndex);
     }
 
 }
 handleBack=()=>{
-    if(this.state.showImageIndex>0)
+    if(this.state.showIndex>0)
     {
-        console.log("back")
-        const showImageIndex=--this.state.showImageIndex;
-        console.log(showImageIndex);
-        this.setState({showImageIndex});
-        this.performShowImage(showImageIndex);
+        const showIndex=--this.state.showIndex;
+        this.setState({showIndex});
+        this.performShowImage(showIndex);
     }
 
 }
 
-performShowImage=(showImageIndex)=>{
-var showImage;
-    if(showImageIndex >=0 && showImageIndex<this.state.images.length)
-    {
-        showImage=this.state.images[showImageIndex];
-        console.log(showImageIndex)
-        this.setState({showImage})
+    performShowImage=(showIndex)=>{
+        var showForward, showBack = false;
+        if(showIndex >=0 && showIndex<this.state.images.length)
+        {
+            if(showIndex>0) showBack = true;
+            if(showIndex<this.state.images.length-1) showForward = true;
+
+            const showImage=this.state.images[showIndex];
+            this.setState({showImage,showForward,showBack})
+        }
     }
 
-}
+
   render() {
     return (
-<div>
-    <GlleryGrid onClick={this.handleClick} images={this.state.images}/>
-    { this.state.show ? <ShowImage imageBack={this.handleBack} imageForward={this.handleForward} imageClose={this.handleClose} image={this.state.showImage}/> : ''}
-</div>
-
-
+        <div>
+            <GlleryGrid onClick={this.handleClick} images={this.state.images}/>
+            { this.state.show ? <ShowImage  alt ={this.state.alt} showForward={this.state.showForward} showBack={this.state.showBack} imageBack={this.handleBack} imageForward={this.handleForward} imageClose={this.handleClose} image={this.state.showImage}/> : ''}
+        </div>
     );
   }
 }
