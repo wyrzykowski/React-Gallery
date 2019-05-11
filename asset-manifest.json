@@ -1,15 +1,15 @@
 {
-  "main.css": "/wyrzykowski/React-Gallery.git/static/css/main.6d402c6e.chunk.css",
-  "main.js": "/wyrzykowski/React-Gallery.git/static/js/main.8115dd0e.chunk.js",
-  "main.js.map": "/wyrzykowski/React-Gallery.git/static/js/main.8115dd0e.chunk.js.map",
-  "runtime~main.js": "/wyrzykowski/React-Gallery.git/static/js/runtime~main.bfc4dc7a.js",
-  "runtime~main.js.map": "/wyrzykowski/React-Gallery.git/static/js/runtime~main.bfc4dc7a.js.map",
-  "static/css/2.063157fb.chunk.css": "/wyrzykowski/React-Gallery.git/static/css/2.063157fb.chunk.css",
-  "static/js/2.5a58932a.chunk.js": "/wyrzykowski/React-Gallery.git/static/js/2.5a58932a.chunk.js",
-  "static/js/2.5a58932a.chunk.js.map": "/wyrzykowski/React-Gallery.git/static/js/2.5a58932a.chunk.js.map",
-  "index.html": "/wyrzykowski/React-Gallery.git/index.html",
-  "precache-manifest.9654d645c7a8d6f12c48ef629bb320ae.js": "/wyrzykowski/React-Gallery.git/precache-manifest.9654d645c7a8d6f12c48ef629bb320ae.js",
-  "service-worker.js": "/wyrzykowski/React-Gallery.git/service-worker.js",
-  "static/css/2.063157fb.chunk.css.map": "/wyrzykowski/React-Gallery.git/static/css/2.063157fb.chunk.css.map",
-  "static/css/main.6d402c6e.chunk.css.map": "/wyrzykowski/React-Gallery.git/static/css/main.6d402c6e.chunk.css.map"
+  "main.css": "/React-Gallery/static/css/main.6d402c6e.chunk.css",
+  "main.js": "/React-Gallery/static/js/main.070cc13a.chunk.js",
+  "main.js.map": "/React-Gallery/static/js/main.070cc13a.chunk.js.map",
+  "runtime~main.js": "/React-Gallery/static/js/runtime~main.44864369.js",
+  "runtime~main.js.map": "/React-Gallery/static/js/runtime~main.44864369.js.map",
+  "static/css/2.063157fb.chunk.css": "/React-Gallery/static/css/2.063157fb.chunk.css",
+  "static/js/2.5a58932a.chunk.js": "/React-Gallery/static/js/2.5a58932a.chunk.js",
+  "static/js/2.5a58932a.chunk.js.map": "/React-Gallery/static/js/2.5a58932a.chunk.js.map",
+  "index.html": "/React-Gallery/index.html",
+  "precache-manifest.c6ae7fdb9a36415dda6367c708af1902.js": "/React-Gallery/precache-manifest.c6ae7fdb9a36415dda6367c708af1902.js",
+  "service-worker.js": "/React-Gallery/service-worker.js",
+  "static/css/2.063157fb.chunk.css.map": "/React-Gallery/static/css/2.063157fb.chunk.css.map",
+  "static/css/main.6d402c6e.chunk.css.map": "/React-Gallery/static/css/main.6d402c6e.chunk.css.map"
 }
