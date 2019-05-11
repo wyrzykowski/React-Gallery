@@ -15,7 +15,7 @@ state={
     showForward:false,
     showBack:false,
     alt:"alt example"
-}
+};
 
 handleClick=(image)=>{
     const show=true;
